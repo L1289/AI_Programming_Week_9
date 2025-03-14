@@ -22,7 +22,7 @@ namespace NodeCanvas.Tasks.Actions {
 		protected override void OnExecute() {
 
 			meshRenderer.material.color = colourToChangeTo;
-			//EndAction(true);
+			EndAction(true);
 		}
 
 		//Called once per frame while the action is active.
@@ -32,8 +32,8 @@ namespace NodeCanvas.Tasks.Actions {
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
-			
-		}
+          
+        }
 
 		//Called when the task is paused.
 		protected override void OnPause() {
