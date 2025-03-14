@@ -1,6 +1,7 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 namespace NodeCanvas.Tasks.Actions {
@@ -25,7 +26,7 @@ namespace NodeCanvas.Tasks.Actions {
             startingPosition.value = agent.transform.position;
             targetPosition.value = Random.insideUnitSphere * scoutRadius + agent.transform.position;
 
-            //EndAction(true);
+            EndAction(true);
         }
 
 		//Called once per frame while the action is active.
